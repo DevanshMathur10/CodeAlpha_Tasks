@@ -1,0 +1,64 @@
+
+  
+  .focuscontainer {
+    font-family: 'Prompt', sans-serif;
+    width: 100%;
+    min-height: 20vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(100deg,#2a2a2c, #1e1e20,#080808);
+  }
+  
+ .box1{
+    opacity: .7;
+    margin-left: 900px;
+    height:1px;
+    width:1px;
+ }
+
+  h2 {
+    margin-left: 100px;
+    position: relative;
+    display: flex;
+    gap: 25px;
+    color: #fff;
+    font-size: 3rem;
+    cursor: pointer;
+  }
+  
+  h2 span {
+    position: relative;
+    filter: blur(5px);
+    padding: 0 5px;
+    transition: 0.5s;
+  }
+  
+  h2 span:hover {
+    filter: blur(0);
+    transition: 0;
+  }
+  
+  h2 span i {
+    position: absolute;
+    inset: 0;
+    background: transparent;
+  }
+
+  h2 span {
+    position: relative;
+    filter: blur(5px);
+    padding: 0 5px;
+    transition: 0.5s;
+  }
+  
+  h2 span:hover {
+    filter: blur(0);
+    transition: 0;
+  }
+  
+  h2 span i {
+    position: absolute;
+    inset: 0;
+    background: transparent;
+  }
+  

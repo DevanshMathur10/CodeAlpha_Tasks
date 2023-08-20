@@ -1,0 +1,85 @@
+
+ .card-container {
+    position: absolute;
+    margin-left: 50px;
+    max-width: 500px;
+    height: 500px;
+    animation-delay: 5s;
+}
+.card-container .card {
+
+    margin-top: 100px;
+    margin-left: 50px;
+    width: 300px;
+    height: 200px;
+    padding: 20px;
+    overflow: hidden;
+    background: #252525;
+    border-radius: 10px;
+    box-shadow: -2px 2px 0px 0px #202020, -10px 10px 40px 0px rgba(0, 0, 0, 0.3);
+    transform: translate(0px, 0px) rotateX(30deg) rotateZ(-20deg);
+    z-index: 2;
+    transition: all 1s;
+}
+.card-container .card:hover {
+    transform: translate(0px, -20px) rotateX(10deg) rotateZ(-20deg);
+    box-shadow: -2px 1px 0px 0px #202020, -40px 40px 40px 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+.card-container .card h1 {
+   font-family: consolas;
+   font-style: italic;
+    color: rgb(171, 170, 170);
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 20px;
+}
+.card-container .card h1:nth-of-type(2) {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.card-container .card .circle {
+    position: absolute;
+    margin: auto;
+    top: 10%;
+    bottom: 0;
+    right: -50%;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: #202020;
+    z-index: -2;
+}
+
+@media only screen and (max-width: 780px) {
+    .card-container .card {
+        width: 250px;
+        height: 150px;
+        animation: hvr 5s infinite ease-in-out;
+        transition: none;
+   }
+    .card-container .card h1 {
+        font-size: 18px;
+   }
+    .card-container .card h1:nth-of-type(2) {
+        font-size: 14px;
+   }
+
+    @keyframes hvr {
+        0% {
+            box-shadow: -2px 2px 0px 0px #202020, -10px 10px 40px 0px rgba(0, 0, 0, 0.3);
+            transform: translate(0px, 0px) rotateX(30deg) rotateZ(-20deg);
+       }
+        50% {
+            transform: translate(0px, -20px) rotateX(30deg) rotateZ(-20deg);
+            box-shadow: -2px 1px 0px 0px #202020, -40px 40px 40px 0 rgba(0, 0, 0, 0.2);
+       }
+        100% {
+            box-shadow: -2px 2px 0px 0px #202020, -10px 10px 40px 0px rgba(0, 0, 0, 0.3);
+            transform: translate(0px, 0px) rotateX(30deg) rotateZ(-20deg);
+       }
+   }
+}

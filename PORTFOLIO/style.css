@@ -1,0 +1,104 @@
+body {
+    background-image: linear-gradient(100deg,#2a2a2c, #1e1e20,#080808);
+    font-family: 'Josefin Sans', sans-serif;
+    color: #ffffff;
+}
+
+/*.text{
+    margin-top: 40px;
+    margin-left: 100px;
+    font-size: 20px;
+    animation: fadeIn 15s;
+    
+}*/
+
+.navbar{
+    background-image: linear-gradient(100deg,#2a2a2c, #1e1e20,#080808);
+    font-family: consolas;
+    margin-top: 20px;
+}
+
+.btn{
+  background-image: linear-gradient(100deg,#2a2a2c, #1e1e20,#080808);
+  font-family: consolas;
+  color: rgb(193, 193, 193);
+  border-color: rgb(128, 128, 129);
+  margin-right: 20px;
+}
+
+#abtitle {
+    font-size: 2px;
+    justify-content: center;
+    align-content: center;
+    margin-left: 100px;
+    margin-top: 50px;
+    font-family: elianto;
+    color: #ffffff;
+    border-right: solid 3px rgba(255, 255, 255, 100);
+    white-space: pre;
+    overflow: hidden;
+    letter-spacing: 0.15rem;
+    margin-top: 100px;
+    /* margin-bottom: 20px; */
+    max-width: 530px;
+    animation: animated-text 4s steps(50,end) 0.5s 1 normal both, darker-animated-cursor 800ms steps(40,end) infinite;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+
+#projectdiv {
+  font-family: elianto;
+  justify-content: center;
+  align-content: center;
+  margin-left: 100px;
+  margin-top:30%;
+}
+
+#contactdiv {
+  font-family: elianto;
+  justify-content: center;
+  align-content: center;
+  margin-left: 100px;
+  margin-top:5%;
+}
+
+@keyframes animated-text{
+  from{width: 0%;}
+  to{width: 1550px;}
+}
+
+@keyframes darker-animated-cursor {
+  from{border-right-color: #01394c;}
+  to{border-right-color: opaque;}
+}
+
+@font-face {
+    font-family: elianto;
+    src: url(Elianto-Regular.otf);
+  }
+  
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #5a5757;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(23, 23, 24, 0.785);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(27, 26, 26);
+}
